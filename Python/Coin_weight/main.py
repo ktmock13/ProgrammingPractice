@@ -8,7 +8,7 @@ import random
 numWeighs = 0
 
 def generateCoinList(size):
-  print "Generating", 12, "random coins with one different weight..."
+  print "Generating", size, "random coins with one different weight..."
   # init array to store coins
   coinSet = []
   # decide on the index for the different coin
