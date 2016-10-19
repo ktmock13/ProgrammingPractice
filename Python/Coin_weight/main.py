@@ -34,6 +34,12 @@ def makeTrios(coinSet):
     print sets[i]
   return sets
 
+###
+# param sets array
+# diffWeight takes an array of objects {id, weight}, ret
+#
+#
+
 def diffWeight(sets):
   global numWeighs
   numWeighs+=1
@@ -41,13 +47,12 @@ def diffWeight(sets):
   return reduce(lambda x,y: x+y, map(lambda x: x['weight'], sets[0]))-reduce(lambda x,y: x+y, map(lambda x: x['weight'], sets[1]))
 
 
-def reduceByThirds(setData, oddWeight): #up to 10, "1" is unknownstate of weight 0 light 2 heavy
+def reduceByThirds(setData, oddWeight): # oddweight -> 1 is unknown state, 0 light, 2 heavy
   #exit case
   if len(setData) < 3:
      return { 'result': setData, 'isHeavier': oddWeight > 1 }
   #split into three groups
   groupA, groupB, groupC, groupR  = makeTrios(setData) #r
-
   diffAB = diffWeight([groupA, groupB])
   if not (len(setData) == 3 & oddWeight == 1):
       if not diffAB:
@@ -81,9 +86,6 @@ def reduceByThirds(setData, oddWeight): #up to 10, "1" is unknownstate of weight
 
 
 #for now only efficient with #'s  3^n and (3^n)+1
-
 coins  = generateCoinList(3)
 c = reduceByThirds(coins, 1)
 print c
-# findOddCoin()
-# result = reduceSet([origSet, 1])
