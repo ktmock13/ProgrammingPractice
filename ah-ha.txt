@@ -8,3 +8,5 @@ Aah ha Moments...
 
 1.3
 - JavaScript (or other languages with immutable vars) not optimal for solving 'do-in-place' questions
+- Java is picky about " and ', Use 'c' for chars
+- If a question is 'in-place' think about iterating through it in reverse

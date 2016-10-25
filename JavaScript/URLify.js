@@ -23,3 +23,5 @@ var MakeURL = function(s, len) {
 }
 
 console.log(MakeURL("Mr John Smith    ", 13));
+
+// shit fuck, strings are immutable in javascript.... duh. Look for real solution in Java folder.
