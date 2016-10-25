@@ -1,0 +1,10 @@
+Aah ha Moments...
+
+1.1
+- Use bitwise operators if you need to increase efficiency
+
+1.2
+- Think about what you can do to your dataset before your algo  ex. sorting
+
+1.3
+- JavaScript (or other languages with immutable vars) not optimal for solving 'do-in-place' questions
