@@ -1,4 +1,4 @@
-public class URLify MakeURL
+public class URLify {
 
   public static char[] MakeURL(char[] s, int len){
     int offset = 0;
