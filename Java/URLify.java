@@ -1,5 +1,4 @@
 public class URLify {
-
   public static char[] MakeURL(char[] s, int len){
     int offset = 0;
     for(int i = 0; i < len; i++){
@@ -24,7 +23,6 @@ public class URLify {
     }
     return s;
   }
-
   public static void main(String[] args) {
     // TESTS
     System.out.println(MakeURL("Mr John Smith    ".toCharArray(), 13));
