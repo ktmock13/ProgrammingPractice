@@ -81,11 +81,11 @@ def reduceByThirds(setData, oddWeight): # oddweight -> 1 is unknown state, 0 lig
     else:
       if oddWeight > 1: ## looking for heavy (exit case)
         return groupA if diffAB > 0 else groupB
-    else: ##  looking for light (exit case)
-        return groupA if diffAB < 0 else groupB
+    # else: ##  looking for light (exit case)
+    #     return groupA if diffAB < 0 else groupB
 
 
 #for now only efficient with #'s  3^n and (3^n)+1
-coins  = generateCoinList(3)
+coins  = generateCoinList(10)
 c = reduceByThirds(coins, 1)
 print c
