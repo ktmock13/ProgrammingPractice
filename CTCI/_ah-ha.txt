@@ -1,0 +1,15 @@
+Aah ha Moments...
+
+1.1
+- Use bitwise operators if you need to increase efficiency
+
+1.2
+- Think about what you can do to your dataset before your algo  ex. sorting
+
+1.3
+- JavaScript (or other languages with immutable vars) not optimal for solving 'do-in-place' questions
+- Java is picky about " and ', Use 'c' for chars
+- If a question is 'in-place' think about iterating through it in reverse
+
+1.5
+- Hash tables often aren't good for problems where order is important
