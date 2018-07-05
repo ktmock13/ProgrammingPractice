@@ -1,0 +1,12 @@
+#this file will generate two keys, public and private
+import math
+
+def isPrime(n):
+  if n < 2: return False
+  for i in range(2, int(n**0.5)+1):
+    if(n%i==0): return False
+  return True 
+
+for i in range(-11, 50):
+  print "%d is prime: %r" % (i, isPrime(i))
+print isPrime(30)
